@@ -729,6 +729,7 @@ function add_tooltip_line(){
   wordle_group.style("opacity", 0)
 }
 function show_wordle_2(){
+  d3.select("#tooltip").style("opacity", 0)
   line_group.transition()             // Start a transition
       .duration(1000)                 // Set duration of the transition (1000ms = 1 second)
       .style("opacity", 0)            // Target opacity (fades out)
