@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>05_ForceLayout</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <section id="intro">
+            <h1 class="intro__hed">What do people actually talk about when talking about GPT4 on X?</h1>
+            <p class="intro__dek">
+                Authored by Yixuan Li
+            </p>
+        </section>
+
+        <section id="scrolly">
+            <svg>
+                <text>0</text>
+            </svg>
+            <div class="tooltip" id="tooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; border: solid 1px #ccc; padding: 10px;"></div>
+            <article>
+              <div class="step" data-step="1">
+                  <h4>What do people actually talk about when talking about GPT4 on X?</h4>
+                  <p>In this data story, let’s delve into the hashtags commonly mentioned in posts about GPT4 on X.</p>
+                  <p>Overall, 3321 different types of hashtags are mentioned in posts related to GPT4.</p>
+
+              </div>
+                <div class="step" data-step="1">
+                  <p>Let's take a look at the 30 most frequently mentioned hashtags in posts related to GPT4 on X, from March 14th to April 10th.</p>
+                  <p>The bar chart displays the hashtags and their frequency of mentions. The height of the bars represents the total number of times each hashtag was mentioned in all posts during this period.</p>
+              </div>
+                <div class="step" data-step="2">
+
+                  <p>We can color-code them based on the average sentiment value (from -1 to 1) of all the posts that mention each hashtag.</p>
+
+                </div>
+                <div class="step" data-step="3">
+                  <p>For instance, the most commonly mentioned hashtag during this period is #AI, with a total mention count of 4897. The average sentiment score is -0.7, indicating that the posts are generally very negative.</p>
+                  <p id="p-AI-positive">  </p>
+                  <p id="p-AI-negative"> </p>
+
+                </div>
+                <div class="step" data-step="4">
+                  <p>This large group of hashtags is all related to Crypto. It seems that Crypto is a very popular discussion topic on X. Their dark color indicates a very negative sentiment, however.</p>
+                  <p id="p-cry-positive"> </p>
+                  <p id="p-cry-negative"> </p>
+
+
+                </div>
+                <div class="step" data-step="5">
+                  <p>This hashtag, #EmergingTech, although not mentioned frequently, has the highest overall sentiment among all the popular hashtags. However, at -0.15, it is neutral but slightly negative. Still, it's a bit better than other hashtags, isn't it?</p>
+                  <p id="p-highest-positive"> </p>
+                  <p id="p-highest-negative"> </p>
+
+                </div>
+                <div class="step" data-step="6">
+                    <p>Hover over these bars to see more information.</p>
+
+                </div>
+                <div class="step" data-step="7">
+                    <p>We can aggregate the posts by their posting dates and explore the trend in postings. It can be observed that from March 25th to March 31st, there were more posts about GPT4. However, it's worth mentioning that there are dates with missing data, specifically March 27th and March 29th.</p>
+                </div>
+                <div class="step" data-step="8">
+                  <p>What about the most popular hashtag, #AI?</p>
+
+
+                </div>
+                <div class="step" data-step="8">
+                  <p>And what about the second most popular hashtag, #ChatGPT?</p>
+                  <p>Their trends look similar, but #ChatGPT was more popular in the early stages, while #AI gradually became more dominant.</p>
+                </div>
+                <div class="step" data-step="9">
+                  <p>Hover over these lines to see more information.</p>
+
+                </div>
+                <div class="step" data-step="10">
+                  <h4>Postings about GPT4 on X reveal quite diverse patterns! As AI continues to advance, how will the conversation evolve? Let's wait and see!</h4>
+                </div>
+            </article>
+        </section>
+
+        <section id="outro"></section>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://unpkg.com/d3-cloud/build/d3.layout.cloud.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

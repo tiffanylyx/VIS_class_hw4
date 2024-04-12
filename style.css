@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#scrolly {
+    position: relative;
+    /* background-color: #f3f3f3; */
+    padding: 1rem;
+}
+
+article {
+    position: relative;
+    padding: 0;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+svg {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background-color: rgba(1,1,1,0);
+    z-index: 1;
+}
+
+/* Make sure no inner elements of .step have pointer-events set to anything other than 'none' */
+.step * {
+    pointer-events: none;
+}
+
+.step {
+    margin: 0 auto 2rem auto;
+    height:10%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+.step p{
+    text-align: center; /* For HTML text elements, use text-align to center */
+    font-size: 26px;
+
+}
+.step h4{
+    text-align: center; /* For HTML text elements, use text-align to center */
+    font-size: 32px;
+    color: black;
+
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step.is-active h5 {
+    background-color: goldenrod;
+    color: #3b3b3b;
+    pointer-events: none;
+}
+
+.step h5 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #3b3b3b;
+}
+
+.step p {
+    padding: 1rem;
+    font-size:1rem;
+    color:#3b3b3b
+}
+
+#tooltip {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0.9,0.9,0.9,0.3);
+  padding: 2px 5px;
+  border: 1px solid black;
+  z-index:10;
+}
+g.axis text {
+  font-size: 16px;
+}
